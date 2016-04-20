@@ -23,12 +23,15 @@ body {
   margin: 0;
 }
 
+p, h1, h2, h3 {
+  margin-bottom: 1.3rem;
+}
 
 .logo-wrap {
-  margin-left: .5rem;
-  margin-right: -1.5rem;
+  margin-left: 1.3rem;
+  margin-right: -2.6em;
   float: left;
-  width: 60px;
+  width: 50px;
 }
 
 .logo {
@@ -39,13 +42,18 @@ body {
 .savoir {
   text-align: center;
   margin: 0 auto;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1.3rem;
+}
+
+.main-head {
+  font-size: 3rem;
+  margin-bottom: -1.3rem;
 }
 
 .label {
-  padding-top: 1rem;
-  padding: -right: 1rem;
-  padding-bottom: 5rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
   display: block;
   background-color: #777;
 }
@@ -93,9 +101,9 @@ nav ul li a:hover {
 
 .toggle-wrap {
   float: right;
-  margin-right: .5rem;
-  margin-top: -2rem;
-  width: 20px;
+  margin-right: 1.3rem;
+  margin-top: -2.8rem;
+  width: 30px;
 }
 
 .nav-label img {
@@ -114,25 +122,36 @@ h1, h2, h3, p {
   padding-right: .5rem;
 }
 
-.banner-wrap {
-  display: block;
-}
-
 .banner-img {
   position: relative;
   width: 100%;
   display: block;
 }
 
+.horizontal-img-wrap,
+.horizontal-img {
+  display: none;
+}
+
+.square-img-wrap,
+.square-img {
+  display: none;
+}
+
 .banner {
   position: absolute;
   top: 10rem;
-  left: 3rem;
+  left: 1.3rem;
+}
+
+.btn-wrap {
+  position: absolute;
+  top: 9rem;
+  left: .5rem;
 }
 
 .banner-body {
-  width: 60%;
-  max-width: 40rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -145,6 +164,11 @@ h1, h2, h3, p {
   color: #000;
 }
 
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 .section-img {
   width: 100%;
 }
@@ -155,7 +179,7 @@ h1, h2, h3, p {
 }
 
 .badge {
-  width: 20%;
+  width: 10%;
   display: inline-block;
   margin-right: 1.3rem;
 }
@@ -175,12 +199,47 @@ h1, h2, h3, p {
     display: none;
   }
 
+  .leading {
+    margin-bottom: -1rem;
+  }
+
+  .badge-group-2 {
+    display: none;
+  }
+
 @media only screen and (min-width: 25em) {
 
   html {
     font-size: 110%;
     line-height: 1.3;
   }
+
+  .badge {
+    width: 6%;
+    display: inline-block;
+    margin-right: 1.3rem;
+  }
+
+  .horizontal-img,
+  .horizontal-img-wrap {
+    display: block;
+    width: 100%;
+  }
+
+  .banner-img-wrap,
+  .banner-img {
+    display: none;
+  }
+
+  .square-img-wrap,
+  .square-img {
+    display: none;
+  }
+
+  .badge-group-2 {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -190,6 +249,23 @@ h1, h2, h3, p {
     line-height: 1.4;
   }
 
+  .banner {
+    position: none;
+  }
+
+  .badge-group-2 {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
   header {
     float: left;
     position: fixed;
@@ -197,8 +273,11 @@ h1, h2, h3, p {
     width: 20%;
   }
 
-  nav {
-    float: left;
+  .label {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    background-color: #777;
   }
 
   .banner-wrap,
@@ -210,15 +289,80 @@ h1, h2, h3, p {
     width: 80%;
   }
 
-  .savoir-wrap {
-    margin-left: -1.4rem;
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
+  .square-img-wrap,
+  .square-img {
+    display: block;
+    width: 100%;
   }
 
-  .logo-wrap {
-    float: none;
-    margin: 0 auto;
+  .horizontal-img,
+  .horizontal-img-wrap {
+    display: none;
+  }
+
+  .banner-img-wrap,
+  .banner-img {
+    display: none;
+  }
+
+  .savoir-wrap {
+    margin-left: -1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-img {
+    position: relative;
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .menu-body {
+    position: absolute;
+    top: 40rem;
+    left: 7rem;
+    width: 50%;
+    z-index: 999;
+  }
+
+  .space-img {
+    position: relative;
+    width: 80%;
+    margin-top: 3rem;
+  }
+
+  .space-body {
+    position: absolute;
+    top: 80rem;
+    left: 7rem;
+    width: 50%;
+    z-index: 998;
+  }
+
+  .people-body {
+  float: left;
+  width: 40%;
+  margin-left: 8rem;
+  }
+
+  .people-img {
+    width: 21.6%;
+    float: right;
+    padding: .5rem;
+  }
+
+  .badge-group {
+    display: none;
+  }
+
+  .badge-group-2 {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .badge-2 {
+    width: 15%;
   }
 
   nav {
@@ -230,13 +374,16 @@ h1, h2, h3, p {
     width: 80%;
   }
 
-  .banner-body {
-    float: none;
+  .banner {
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
   }
 
   .btn-wrap {
-    float: right;
-    width: 80%;
+    position: absolute;
+    top: 10rem;
+    left: 6.3rem;
   }
 
   .link-card-group {
@@ -248,22 +395,40 @@ h1, h2, h3, p {
   .link-card-group li a {
     color: #000;
     text-decoration: none;
-    background-color: blue;
+    text-align: center;
+    background-color: #bbb;
     display: block;
-    padding: 2rem;
-    margin: 0;
+    padding: 1.9rem;
+    margin-left: -2rem;
     }
 
     .link-card-group li a:hover {
-      background-color: red;
-      color: white;
+      background-color: #000;
+      color: #fff;
+      margin-left: -2rem;
+      text-align: center;
+    }
+
+    .savoir {
+      font-size: 1.8rem;
+    }
+
+    .main-head {
+      font-size: 3rem;
+      margin-bottom: -1.3rem;
+    }
+
+    .logo-wrap {
+      margin-left: 3.3rem;
     }
   }
+}
 
-  @media only screen and (min-width: 60em) {
+@media only screen and (min-width: 90em) {
 
-    html {
-      font-size: 130%;
-      line-height: 1.5;
-    }
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
 }
