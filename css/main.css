@@ -185,7 +185,7 @@ header nav a:active {
 
 .btn,
 .btn:link,
-.btn:visited  {
+.btn:visited {
   border: solid 1px #fff;
   border-radius: 5px;
   padding: .5rem;
@@ -389,7 +389,6 @@ footer {
     z-index: 999;
   }
 
-
   .space-body {
     position: absolute;
     top: 80rem;
@@ -454,7 +453,7 @@ footer {
 
   .link-card-group li a,
   .link-card-group li a:link,
-  .link-card-group li a:visited  {
+  .link-card-group li a:visited {
     color: #000;
     text-decoration: none;
     text-align: center;
