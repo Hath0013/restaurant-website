@@ -18,21 +18,22 @@
       </div>
 
       <div class="savoir-wrap">
-        <h1 class="savoir leading">Savoir Faire</h1>
+        <a href="#home"><h1 class="savoir leading">Savoir Faire</h1></a>
       </div>
 
       <nav>
         <input type="checkbox" class="nav-check" id="nav-check">
         <label class="nav-label" for="nav-check">
           <span class="toggle-wrap">
-      <img src="images/nav-icon.svg" alt="Open Navigation">
+      <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
+      <img class="nav-close" src="images/nav-icon-close.svg" alt="Close Navigation">
     </span>
         </label>
         <ul class="nav">
-          <li><a id="menu-nav" href="#menu">Menu</a></li>
-          <li><a id="space-nav" href="#space">Space</a></li>
-          <li><a id="people-nav" href="#people">People</a></li>
-          <li><a id="contact-nav" href="#contact">Contact</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#space">Space</a></li>
+          <li><a href="#people">People</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -54,7 +55,7 @@
 
   <main>
 
-    <article>
+    <article id="home">
       <section class="banner-wrap">
 
         <div class="banner-img-wrap">
@@ -78,32 +79,28 @@
         </div>
       </section>
 
-      <section id="menu" class="menu">
+      <section class="menu" id="menu">
         <div class="menu-body">
-          <a href="#menu-nav menu-link"><h2 class="leading">Menu</h2></a>
+          <h2 class="leading">Menu</h2>
           <p>Culinary and baking students prepare all the food, including our exclusive line of <strong>La Dolce Vita</strong> preserves and <strong>Dirty Duck Soaps.</strong> You’ll find everything from soups and salads to complete meals, breads, cakes and pastries and more.</p>
         </div>
         <div>
-          <img class="menu-img section-img" src="images/placeholder-1by1.svg" alt="food from the menu">
+          <img id="menu-link" class="menu-img section-img" src="images/placeholder-1by1.svg" alt="food from the menu">
         </div>
       </section>
 
       <section id="space">
-        <div>
           <div class="space-body">
-            <a href="#space-nav"><h2 class="leading">Space</h2></a>
+            <h2 class="leading">Space</h2>
             <p>Enjoy your freshly-made meal while relaxing in our calm, modern atmosphere. Bring a laptop to study, a book to read or listen to some of your favourite music.</p>
           </div>
-          <div>
-            <img class="space-img section-img" src="images/placeholder-1by1.svg" alt="image of the space">
-          </div>
-        </div>
+            <img id="space-link" class="space-img section-img" src="images/placeholder-1by1.svg" alt="image of the space">
       </section>
 
-      <section>
+      <section id="people">
 
-        <div class="people-head" id="people" id="people-link">
-          <a href="#people-nav"><h2 class="leading">People</h2></a>
+        <div>
+          <h2 id="people-link" class="leading">People</h2>
           <p>All of our food is prepared by culinary and baking students — have a look below and meet some of our student chefs.</p>
         </div>
 
@@ -139,10 +136,10 @@
   </main>
 
   <aside>
-    <section class="contact" id="contact" id="contact-link">
+    <section class="contact" id="contact">
 
       <div>
-        <a href="#contact-nav">  <h2 class="leading">Contact</h2></a>
+        <h2 id="contact-link" class="leading">Contact</h2>
         <p class="leading">Inquiries? Please contact Savoir Faire at:</p>
         <p class="leading"><strong>(613) 727-4723 ext. 6435</strong></p>
         <p>We are located in E135 in the Student Commons Building.</p>

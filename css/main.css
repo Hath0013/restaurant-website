@@ -56,6 +56,10 @@ p, h1, h2, h3 {
   color: #fff;
 }
 
+.savoir-wrap a {
+  text-decoration: none;
+}
+
 .main-head {
   font-size: 3rem;
   margin-bottom: -1.3rem;
@@ -138,7 +142,8 @@ header nav a:active {
   width: 20px;
 }
 
-.nav-label img {
+.nav-open,
+.nav-close {
   display: block;
   width: 100%;
 }
@@ -146,6 +151,18 @@ header nav a:active {
 .nav-check:checked ~ .nav-label {
   padding: .5rem;
   border-radius: 10px;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-closed {
+  display: block;
 }
 
 .banner-img {
@@ -238,22 +255,6 @@ footer {
 
 .badge-group-2 {
   display: none;
-}
-
-.menu-body a {
-  text-decoration: none;
-}
-
-.space-body a {
-  text-decoration: none;
-}
-
-.people-head a {
-  text-decoration: none;
-}
-
-.contact a {
-  text-decoration: none;
 }
 
 strong {
@@ -424,7 +425,7 @@ strong {
 
   .menu-body {
     position: absolute;
-    top: 60rem;
+    top: 55rem;
     left: 9rem;
     width: 50%;
     z-index: 999;
@@ -432,7 +433,7 @@ strong {
 
   .space-body {
     position: absolute;
-    top: 105rem;
+    top: 95rem;
     left: 22rem;
     width: 50%;
     z-index: 998;
@@ -553,6 +554,12 @@ strong {
     position: absolute;
     top: 10rem;
     left: 5rem;
+  }
+
+  .people-img {
+    width: 15%;
+    margin: 0;
+    margin-right: 10rem;
   }
 }
 
