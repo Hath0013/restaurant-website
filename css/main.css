@@ -136,10 +136,10 @@ header nav a:active {
 }
 
 .toggle-wrap {
-  float: right;
-  margin-right: 1.3rem;
-  margin-top: -1.8rem;
-  width: 20px;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 30px;
 }
 
 .nav-open,
@@ -161,7 +161,7 @@ header nav a:active {
   display: none;
 }
 
-.nav-check:checked ~ .nav-label .nav-closed {
+.nav-check:checked ~ .nav-label .nav-close {
   display: block;
 }
 
@@ -223,7 +223,7 @@ header nav a:active {
 
 .map-img {
   margin-bottom: 1.3rem;
-  width: 100%;
+  width: 70%;
 }
 
 .badge {
@@ -359,10 +359,12 @@ strong {
     line-height: 1.5;
   }
 
+  main {
+    width: 80%;
+  }
+
   p, h1, h2, h3 {
     margin-bottom: 1.5rem;
-    float: right;
-    width: 80%;
   }
 
   header {
@@ -381,15 +383,6 @@ strong {
 
   .logo-wrap {
     width: 40px;
-  }
-
-  .banner-wrap,
-  .section-img,
-  .map-img,
-  .badge-group,
-  footer {
-    float: right;
-    width: 80%;
   }
 
   .square-img-wrap,
@@ -414,7 +407,7 @@ strong {
   }
 
   .menu-img {
-    width: 80%;
+    width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
@@ -423,18 +416,32 @@ strong {
     position: relative;
   }
 
+  main {
+    float: right;
+    width: 80%;
+  }
+
+  aside {
+    float: right;
+    width: 80%;
+  }
+
   .menu-body {
     position: absolute;
-    top: 55rem;
-    left: 9rem;
+    top: 5rem;
+    left: 2rem;
     width: 50%;
     z-index: 999;
   }
 
+  .space {
+    position: relative;
+  }
+
   .space-body {
     position: absolute;
-    top: 95rem;
-    left: 22rem;
+    bottom: 5rem;
+    right: 3rem;
     width: 50%;
     z-index: 998;
   }
