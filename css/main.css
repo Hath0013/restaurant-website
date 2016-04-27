@@ -226,6 +226,10 @@ header nav a:active {
   width: 70%;
 }
 
+.map-img-wrap {
+  text-align: center;
+}
+
 .badge {
   width: 10%;
   display: inline-block;
@@ -267,6 +271,11 @@ strong {
 
 .section-img {
   padding: 1rem;
+}
+
+.back-to-top {
+  text-decoration: none;
+  margin: 0;
 }
 
 @media only screen and (min-width: 25em) {
@@ -491,7 +500,6 @@ strong {
   .btn-wrap {
     position: absolute;
     top: 10rem;
-    left: 5.5rem;
   }
 
   .link-card-group {
@@ -567,6 +575,10 @@ strong {
     width: 15%;
     margin: 0;
     margin-right: 10rem;
+  }
+
+  .back-to-top {
+    display: none;
   }
 }
 
