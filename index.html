@@ -29,25 +29,25 @@
     </span>
         </label>
         <ul class="nav">
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Space</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-        <ul class="link-card-group">
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Space</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a id="menu-nav" href="#menu">Menu</a></li>
+          <li><a id="space-nav" href="#space">Space</a></li>
+          <li><a id="people-nav" href="#people">People</a></li>
+          <li><a id="contact-nav" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
 
+        <ul class="link-card-group">
+          <li><a href="#menu-link">Menu</a></li>
+          <li><a href="#space-link">Space</a></li>
+          <li><a href="#people-link">People</a></li>
+          <li><a href="#contact-link">Contact</a></li>
+        </ul>
+
     <div class="badge-group-2">
-      <a href="#"><img class="badge-2" src="images/placeholder-circle.svg" alt="Twitter Icon"></a>
-      <a href="#"><img class="badge-2" src="images/placeholder-circle.svg" alt="Instagram Icon"></a>
-      <a href="#"><img class="badge-2" src="images/placeholder-circle.svg" alt="Facebook Icon"></a>
+      <a href="https://twitter.com"><img class="badge-2" src="images/placeholder-circle.svg" alt="Twitter Icon"></a>
+      <a href="https://www.instagram.com"><img class="badge-2" src="images/placeholder-circle.svg" alt="Instagram Icon"></a>
+      <a href="https://www.facebook.com"><img class="badge-2" src="images/placeholder-circle.svg" alt="Facebook Icon"></a>
     </div>
 
   </header>
@@ -72,15 +72,15 @@
             <h2 class="main-head">Chill out.</h2>
             <p>Enjoy affordable food in a relaxed space.</p>
             <div class="btn-wrap">
-              <a class="btn" href="">See the Menu</a>
+              <a class="btn" href="#menu">See the Menu</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="menu">
+      <section id="menu" class="menu">
         <div class="menu-body">
-          <h2 class="leading">Menu</h2>
+          <a href="#menu-nav menu-link"><h2 class="leading">Menu</h2></a>
           <p>Culinary and baking students prepare all the food, including our exclusive line of <strong>La Dolce Vita</strong> preserves and <strong>Dirty Duck Soaps.</strong> You’ll find everything from soups and salads to complete meals, breads, cakes and pastries and more.</p>
         </div>
         <div>
@@ -88,10 +88,10 @@
         </div>
       </section>
 
-      <section class="space">
+      <section id="space">
         <div>
           <div class="space-body">
-            <h2 class="leading">Space</h2>
+            <a href="#space-nav"><h2 class="leading">Space</h2></a>
             <p>Enjoy your freshly-made meal while relaxing in our calm, modern atmosphere. Bring a laptop to study, a book to read or listen to some of your favourite music.</p>
           </div>
           <div>
@@ -100,10 +100,10 @@
         </div>
       </section>
 
-      <section class="people">
+      <section>
 
-        <div class="people-body">
-          <h2 class="leading">People</h2>
+        <div class="people-head" id="people" id="people-link">
+          <a href="#people-nav"><h2 class="leading">People</h2></a>
           <p>All of our food is prepared by culinary and baking students — have a look below and meet some of our student chefs.</p>
         </div>
 
@@ -112,7 +112,7 @@
           <p>Gregory is a second year culinary student who enjoys creating unique dishes.</p>
         </div>
 
-        <div>
+        <div class="people-img-wrap">
           <img class="people-img section-img" src="images/placeholder-circle.svg" alt="image of chef">
         </div>
 
@@ -121,33 +121,34 @@
           <p>Mara is a first bakery student and is passionate about perfecting pastries.</p>
         </div>
 
-        <div>
-          <img class="people-img section-img" src="images/placeholder-circle.svg" alt="image of chef">
-        </div>
+          <div class="people-img-wrap">
+            <img class="people-img section-img" src="images/placeholder-circle.svg" alt="image of chef">
+          </div>
 
-        <div class="people-body">
-          <h3 class="leading">Jayden Main</h3>
-          <p>Jayden is a first year culinary student who brings home-cooked food to life.</p>
-        </div>
+          <div class="people-body">
+            <h3 class="leading">Jayden Main</h3>
+            <p>Jayden is a first year culinary student who brings home-cooked food to life.</p>
+          </div>
 
-        <div>
-          <img class="people-img section-img" src="images/placeholder-circle.svg" alt="image of chef">
-        </div>
+          <div class="people-img-wrap">
+            <img class="people-img section-img" src="images/placeholder-circle.svg" alt="image of chef">
+          </div>
 
       </section>
     </article>
   </main>
 
   <aside>
-    <section class="contact">
+    <section class="contact" id="contact" id="contact-link">
 
       <div>
-        <h2 class="leading">Contact</h2>
+        <a href="#contact-nav">  <h2 class="leading">Contact</h2></a>
         <p class="leading">Inquiries? Please contact Savoir Faire at:</p>
         <p class="leading"><strong>(613) 727-4723 ext. 6435</strong></p>
         <p>We are located in E135 in the Student Commons Building.</p>
         <h3 class="leading">Daily Hours</h3>
-        <p>Monday to Saturday <data value="10:30">10:30AM – 5:30PM</data> (closed daily from <data value="2:30-3:30">2:30 – 3:15</data> for lunch)</p>
+        <p class="leading">Monday to Saturday <data value="10:30">10:30AM – 5:30PM</data></p>
+        <p>(closed daily from <data value="2:30-3:30">2:30 – 3:15</data> for lunch)</p>
 
         <h3 class="leading">Our Address</h3>
         <p class="leading"><strong>1385 Woodroffe Ave</strong></p>
@@ -159,14 +160,14 @@
       </div>
 
       <div class="badge-group">
-        <a href="#"><img class="badge" src="images/placeholder-circle.svg" alt="Twitter Icon"></a>
-        <a href="#"><img class="badge" src="images/placeholder-circle.svg" alt="Instagram Icon"></a>
-        <a href="#"><img class="badge" src="images/placeholder-circle.svg" alt="Facebook Icon"></a>
+        <a href="https://twitter.com"><img class="badge" src="images/placeholder-circle.svg" alt="Twitter Icon"></a>
+        <a href="https://www.facebook.com"><img class="badge" src="images/placeholder-circle.svg" alt="Instagram Icon"></a>
+        <a href="https://www.facebook.com"><img class="badge" src="images/placeholder-circle.svg" alt="Facebook Icon"></a>
       </div>
 
     </section>
 
-    <footer><small>Copyright information goes in the footer.  This is the footer.</small></footer>
+    <footer><small> © 2016 ALL RIGHTS RESERVED Savoire Faire </small></footer>
 
   </aside>
 

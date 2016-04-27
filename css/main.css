@@ -240,6 +240,34 @@ footer {
   display: none;
 }
 
+.menu-body a {
+  text-decoration: none;
+}
+
+.space-body a {
+  text-decoration: none;
+}
+
+.people-head a {
+  text-decoration: none;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: normal;
+}
+
+.people-img-wrap {
+  padding: 1rem;
+}
+
+.section-img {
+  padding: 1rem;
+}
+
 @media only screen and (min-width: 25em) {
 
   html {
@@ -283,6 +311,19 @@ footer {
   .map-img {
     padding-right: 1.3rem;
     padding-left: 1.3rem;
+  }
+
+  .people-img {
+    width: 60%;
+  }
+
+  .people-img-wrap {
+    text-align: center;
+  }
+
+  .people-body {
+    width: 60%;
+    margin: 0 auto;
   }
 
 }
@@ -383,16 +424,16 @@ footer {
 
   .menu-body {
     position: absolute;
-    top: 40rem;
-    left: 7rem;
+    top: 60rem;
+    left: 9rem;
     width: 50%;
     z-index: 999;
   }
 
   .space-body {
     position: absolute;
-    top: 80rem;
-    left: 7rem;
+    top: 105rem;
+    left: 22rem;
     width: 50%;
     z-index: 998;
   }
@@ -408,10 +449,10 @@ footer {
   }
 
   .people-img {
-    width: 15%;
+    width: 12%;
     float: right;
     padding: .5rem;
-    margin-right: 10rem;
+    margin-right: 15rem;
   }
 
   .badge-group {
@@ -442,7 +483,7 @@ footer {
   .btn-wrap {
     position: absolute;
     top: 10rem;
-    left: 6.3rem;
+    left: 5.5rem;
   }
 
   .link-card-group {
